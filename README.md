@@ -1,24 +1,11 @@
-# Example
+# Fake Uploader
 
-**TODO: Add description**
+First working example of a web app using Elixir's Plug.
+See: https://elixirschool.com/lessons/specifics/plug/#creating-a-plug
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `example` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:example, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `example` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:example]]
-    end
-    ```
-
+# Specifications
+* Welcomes the user on root ("/") by printing "Welcome"
+* Any POST /upload request...
+  * ... with "content" and "mimetype" should print "Uploaded".
+  * Otherwise, return an empty 500 error.
+* Doesn't welcome the user on other routes by priting "Oops"
